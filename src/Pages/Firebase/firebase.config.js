@@ -1,4 +1,5 @@
 const firebaseConfig = {
+   
     apiKey: "AIzaSyAU7uPNgexppjr1QfxDLFK8KLoHjtMuRNM",
     authDomain: "food-delivery-website-7e5fa.firebaseapp.com",
     projectId: "food-delivery-website-7e5fa",

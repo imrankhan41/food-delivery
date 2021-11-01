@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import "./MyOrders.css"
 const MyOrders = () => {
     const [user,setUser]=useState([])
    useEffect(()=>{
@@ -31,8 +31,11 @@ const MyOrders = () => {
     return (
         <div className="My-orders">
             <h1>My All Orders</h1>
-            <table className="table mx-3 ">
-                <thead className="bg-secondary">
+            <div className="table-style">
+
+         
+            <table className="table mx-3">
+                <thead className="bg-secondary ">
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">User Name</th>
@@ -62,6 +65,7 @@ const MyOrders = () => {
                     ))}
                 </tbody>
                 </table>
+                </div>
         </div>
     );
 };
