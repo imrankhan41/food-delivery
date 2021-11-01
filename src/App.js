@@ -15,6 +15,7 @@ import MyOrders from './Pages/MyOrders/MyOrders';
 import MyDetailsOrder from './Pages/MyDetailsOrder/MyDetailsOrder';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import EditUser from './Pages/Edit User/EditUser';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
        <Route path="/services">
          <Services></Services>
        </Route>
+        <PrivateRoute path="/edituser/:id">
+         <EditUser></EditUser>
+       </PrivateRoute>
        <Route path="/login">
          <Login></Login>
        </Route>

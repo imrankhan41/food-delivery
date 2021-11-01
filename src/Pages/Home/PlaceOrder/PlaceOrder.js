@@ -52,7 +52,7 @@ const PlaceOrder = () => {
                 <div className="col-lg-6 booking text-secondary add1-user">
                  <h4>Ordered By:{users?.displayName}</h4>
                  <h4>Email:{users?.email}</h4>
-                 <img src={users?.photoURL} alt="" srcset="" />
+                 {/* <img src={users?.photoURL} alt="" srcset="" /> */}
                   <form className="add-user" onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true, maxLength: 100 })} placeholder="Name" value={users?.displayName} />
                     <input {...register("email")}  placeholder="Personal email" value={users?.email}/>

@@ -64,7 +64,7 @@ const ManageAllOrders = () => {
                      <td>{user.address}</td>
                      <td>
                          <Link className="m-1 btn btn-primary" to={`/orders/${user._id}`}>View</Link>
-                         {/* <Link className="m-2 btn btn-outline-primary" to={`/edituser/${user._id}`}>Edit</Link> */}
+                         <Link className="m-2 btn btn-outline-primary" to={`/edituser/${user._id}`}>Edit</Link>
                          <button className="btn btn-danger" onClick={()=>handleDeleteUser(user._id)}>Delete</button>
                          <button className="btn btn-danger">{click? "Approved" :"Pending"} </button><form><input onChange={toggleIn} type="checkbox"/></form>
                          </td>

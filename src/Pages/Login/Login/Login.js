@@ -19,7 +19,13 @@ const Login = () => {
         <div className="login">
             
             <h1>Please Log in</h1>
-            <button onClick={handleGoogleLogIn} className="login-button">Log in</button>
+            <form >
+            <input  className="login1" type="email" name="" id="" placeholder="Email" required/> <br/>
+            <input className="login1" type="password" name="" id="" placeholder="Password" required/> <br />
+            <button className="login1 button">LogIn</button>
+            </form>
+            <div>Or</div>
+            <button onClick={handleGoogleLogIn} className="login1 button">Google Log in</button>
         </div>
     );
 };
