@@ -11,6 +11,7 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Pages/Login/Login/Login';
 import PlaceOrder from './Pages/Home/PlaceOrder/PlaceOrder';
 import AddUser from './Pages/AddUser/AddUser';
+import MyOrders from './Pages/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
        </Route>
        <Route path="/adduser">
          <AddUser></AddUser>
+       </Route>
+       <Route path="/myorders">
+         <MyOrders></MyOrders>
        </Route>
        <Route path="/service/:serviceId">
          <PlaceOrder></PlaceOrder>
