@@ -12,6 +12,9 @@ import Login from './Pages/Login/Login/Login';
 import PlaceOrder from './Pages/Home/PlaceOrder/PlaceOrder';
 import AddUser from './Pages/AddUser/AddUser';
 import MyOrders from './Pages/MyOrders/MyOrders';
+import MyDetailsOrder from './Pages/MyDetailsOrder/MyDetailsOrder';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -33,15 +36,21 @@ function App() {
        <Route path="/login">
          <Login></Login>
        </Route>
-       <Route path="/adduser">
+       <PrivateRoute path="/adduser">
          <AddUser></AddUser>
-       </Route>
-       <Route path="/myorders">
+       </PrivateRoute>
+       <PrivateRoute path="/myorders">
          <MyOrders></MyOrders>
-       </Route>
-       <Route path="/service/:serviceId">
+       </PrivateRoute>
+       <PrivateRoute path="/manageallorders">
+         <ManageAllOrders></ManageAllOrders>
+       </PrivateRoute>
+       <PrivateRoute path="/orders/:orderid">
+         <MyDetailsOrder></MyDetailsOrder>
+       </PrivateRoute>
+       <PrivateRoute path="/service/:serviceId">
          <PlaceOrder></PlaceOrder>
-       </Route>
+       </PrivateRoute>
        <Route path="*">
          <PageNotFound></PageNotFound>
        </Route>
