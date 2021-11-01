@@ -1,5 +1,5 @@
 # Food Delivery Website 
-Click the link to see website data [Link to heroku ](https://bloodcurdling-nightmare-55136.herokuapp.com/), [Link to heroku ](https://bloodcurdling-nightmare-55136.herokuapp.com/services),[Link to heroku ](https://bloodcurdling-nightmare-55136.herokuapp.com/orders)
+Click the link to see website[Link to Firebase ](https://food-delivery-website-7e5fa.firebaseapp.com/)
 
 - Using Javascript react,pure css,JSX for making this website,Github used for code repository &
 - This website has made for the people who want to buy in different item's food
