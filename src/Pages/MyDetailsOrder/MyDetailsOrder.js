@@ -5,7 +5,7 @@ const MyDetailsOrder = () => {
     const [user,setUser]=useState({});
     const {orderid}=useParams();
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders/${orderid}`)
+        fetch(`https://bloodcurdling-nightmare-55136.herokuapp.com/orders/${orderid}`)
         .then(res=>res.json())
         .then(data=>setUser(data))
     },[])
